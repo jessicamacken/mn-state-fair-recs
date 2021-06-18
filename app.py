@@ -32,7 +32,7 @@ def activities_type(acttype):
     # print(myactivities)
     n = len(myactivities)
     # print(n)
-    return render_template('activities_type.html', myactivities=myactivities, n=n)
+    return render_template('activities_type.html', myactivities=myactivities, n=n, acttype=acttype)
 
 @app.route('/food/<foodtype>')
 def food_type(foodtype):

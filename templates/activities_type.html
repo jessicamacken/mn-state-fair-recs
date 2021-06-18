@@ -42,15 +42,23 @@
 							<li><a href="#" class="button primary fit">Get Started</a></li>
 							<li><a href="#" class="button fit">Log In</a></li>
 						</ul>
-					</nav> -->
-
+                    </nav> -->
+                    <h1 class="jcenter">Activities</h1>
+                    {% if acttype=="rides":  %}
+                   <img class="jcenter" src="/static/images/ride.jpg"/>
+                   {% elif acttype=="animals": %}
+                   <img class="jcenter" src="/static/images/sheep.jpg"/>
+                   {% elif acttype=="music": %}
+                    <img class="jcenter" src="/static/images/music.jpg"/>
+                    {%   endif   %}
 				<!-- Banner -->
 					<!-- <section id="banner" class="major">
 						<div class="inner">
 							<header class="major">
-								<h1>Activities</h1>
+                                <h1>Activities</h1>
+                                <img src="/static/images/ride.jpg"/>
 							</header>
-							<div class="content">
+							<!-- <div class="content">
 								<p>Choose an activity category on the right!</p>
 								<ul class="actions">
 									<li><a href="/activities/animals" class="button">Animals</a></li>
@@ -61,8 +69,8 @@
                                 <ul class="actions">
 									<li><a href="/activities/music" class="button">Music</a></li>
 								</ul>
-							</div>
-						</div>
+							</div> -->
+						<!-- </div>
 					</section> -->
 
 				<!-- Main -->
